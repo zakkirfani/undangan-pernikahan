@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Undangan Pernikahan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bg-music" loop>
+    <source src="assets/music/lahu_1.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🔊</button>
+
+
+<!-- COVER -->
+<section class="cover">
+    <p class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
+    <h1>Zakki & Hilma</h1>
+    <p class="date">04 April 2026</p>
+    <button onclick="openInvitation()">Buka Undangan</button>
+</section>
+
+<!-- AYAT -->
+<section class="ayat">
+    <p class="arab">
+        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا
+    </p>
+    <p class="arti">
+        "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan pasangan untukmu..."
+        <br><strong>(QS. Ar-Rum: 21)</strong>
+    </p>
+</section>
+
+<!-- MEMPELAI -->
+<section class="mempelai">
+    <div>
+        <h2>Muhammad Zakki Irfani</h2>
+        <p>Putra kedua dari Bapak Akh. Zainuri & Ibu Siti Maisaroh</p>
+    </div>
+    <div>
+        <h2>Hilmaniyya</h2>
+        <p>Putri pertama dari Bapak Moh. Masykur Hasyim & Ibu Kholifah</p>
+    </div>
+</section>
+
+<!-- ACARA -->
+<section class="acara">
+    <h2>Detail Acara</h2>
+
+    <div class="card">
+        <h3>Akad Nikah</h3>
+        <p>Sabtu, 04 April 2026</p>
+        <p>07.00 WIB</p>
+        <p>Masjid Jami' Gapuro, Warungasem, Batang</p>
+    </div>
+
+    <div class="card">
+        <h3>Resepsi</h3>
+        <p>Sabtu, 04 April 2026</p>
+        <p>11.00 - 14.00 WIB</p>
+        <p>Gedung Pertemuan Aman-Jiba, Kota Pekalongan</p>
+    </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown">
+    <h2>Menuju Hari Bahagia</h2>
+    <div class="time">
+        <div><span id="days">0</span><small>Hari</small></div>
+        <div><span id="hours">0</span><small>Jam</small></div>
+        <div><span id="minutes">0</span><small>Menit</small></div>
+        <div><span id="seconds">0</span><small>Detik</small></div>
+    </div>
+</section>
+
+
+<!-- RSVP -->
+<section class="rsvp">
+    <h2>Konfirmasi Kehadiran</h2>
+    <input type="text" placeholder="Nama Anda">
+    <button>Kirim</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Terima kasih atas doa & restu Anda</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
