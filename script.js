@@ -6,6 +6,16 @@ function openInvitation() {
     document.querySelector('.cover').style.display = 'none';
 }
 
+/* PERSONAL INVITATION */
+const params = new URLSearchParams(window.location.search);
+const guest = params.get("to");
+
+if (guest) {
+    document.getElementById("guestName").innerHTML =
+        "Yth. Bapak/Ibu/Saudara/i<br><strong>" + decodeURIComponent(guest) + "</strong>";
+}
+
+
 /* COUNTDOWN */
 const weddingDate = new Date("April 04, 2026 11:00:00").getTime();
 
@@ -36,3 +46,4 @@ function toggleMusic() {
     }
     isPlaying = !isPlaying;
 }
+
